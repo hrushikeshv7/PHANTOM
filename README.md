@@ -24,6 +24,7 @@ PHANTØM is a full-stack threat intelligence platform built for Security Operati
 > Built by a single engineer. Runs like an enterprise product.
 
 ---
+<img width="1920" height="1080" alt="Screenshot_2026-04-01_22_34_30" src="https://github.com/user-attachments/assets/d59d8142-0770-430b-a5a0-41ff02d330c0" />
 
 ## ✨ Features
 
