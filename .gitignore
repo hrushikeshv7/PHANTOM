@@ -1,4 +1,4 @@
 .env
-.env
+**/.env
 phantom_env/
 node_modules/

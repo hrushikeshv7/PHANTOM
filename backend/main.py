@@ -21,11 +21,12 @@ from utils.aggregator import aggregate_threat_intel
 from nlp.scorer import calculate_threat_score, build_summary_context
 from nlp.summarizer import generate_threat_briefing
 from api.otx import get_latest_pulses
+from api.mobile import mobile_router
 
 load_dotenv()
 
 
-# ── Lifespan ──────────────────────────────────────────────────────────────────
+# ── Lifespan ──────
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     init_db()
@@ -41,11 +42,13 @@ app = FastAPI(
     version="2.0.0",
     lifespan=lifespan
 )
+      #For the Mobile App
+app.include_router(mobile_router)
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[os.getenv("CORS_ORIGINS", "http://localhost:3000")],
-    allow_credentials=True,
+    allow_origins=["*"],
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
