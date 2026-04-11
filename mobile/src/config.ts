@@ -1,17 +1,8 @@
-// ─────────────────────────────────────────────
-// PHANTØM Mobile — Config
-// Replace RENDER_URL with your actual Render URL
-// ─────────────────────────────────────────────
 
 export const CONFIG = {
-  // PHANTØM backend on Render (no trailing slash)
-  API_BASE_URL: "https://your-phantom-app.onrender.com",
-
-  // MOBILE_API_KEY in Render environment variables
+  API_BASE_URL: "https://phantom-tvat.onrender.com",
   MOBILE_API_KEY: "phantom-mobile-2024",
-
-  // WebSocket (wss for https backends)
-  WS_URL: "wss://your-phantom-app.onrender.com/ws",
+  WS_URL: "https://phantom-tvat.onrender.com/ws",
 };
 
 // Severity colors — consistent across all screens
